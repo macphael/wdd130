@@ -1,3 +1,8 @@
+root: {
+    --box-color: solid #yellow;
+    --box-shadow-color: #darkgray;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -18,7 +23,7 @@ img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 p {
@@ -34,7 +39,7 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 aside {
@@ -42,7 +47,7 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--box-color);
     color: #333;
     text-align: center;
 }
@@ -54,6 +59,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #300;
+    border-top: 1px solid black;
     text-align: center;
 }
