@@ -28,12 +28,12 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav, p, section {
     margin: 16px;
     padding: 8px;
 }
 
-.socialmedia a {
+.social a {
     text-decoration: none;
 }
 
@@ -51,7 +51,8 @@ h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -59,10 +60,37 @@ h1 {
 }
 
 article {
-
+    position: absolute;
+    top: 430px;
+    width: 100%;
+    text-align: left;
+    background-color: var(--accent1-color);
+    color: #fff;
+    opacity: 0.7;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+h2 {
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+.social img {
+    width: 60px;
+    height: auto;
+}
+
+footer {
+    border-top: 2px dotted;
 }
