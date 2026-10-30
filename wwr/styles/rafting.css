@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizimg: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -33,7 +33,7 @@ nav, p, section {
     padding: 8px;
 }
 
-.social a {
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -81,12 +81,12 @@ h2 {
     text-align: center;
 }
 
-.social {
+.socialmedia {
     padding: 0;
     margin: 0;
     padding-left: 5px;
 }
-.social img {
+.socialmedia img {
     width: 60px;
     height: auto;
 }
