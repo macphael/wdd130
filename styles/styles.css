@@ -1,6 +1,6 @@
 root: {
     --box-color: solid yellow;
-    --box-shadow: 1px 1px 1px darkgray;
+    --box-shadow-color: darkgray;
 }
 
 * {
@@ -54,7 +54,7 @@ aside {
     padding: 0;
     width: 20rem;
     border: 0;
-    box-shadow: 0;
+    box-shadow: 1px;
     background-color: var(--box-color);
     text-align: center;
     position: relative;
