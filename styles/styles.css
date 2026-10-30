@@ -54,7 +54,7 @@ aside {
     padding: 0;
     width: 20rem;
     border: 0;
-    box-shadow: 1px;
+    box-shadow: 1px 1px 1px black;
     background-color: var(--box-color);
     text-align: center;
     position: relative;
