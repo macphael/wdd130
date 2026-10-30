@@ -1,6 +1,6 @@
 root: {
     --box-color: solid yellow;
-    --box-shadow: darkgray;
+    --box-shadow: 0px 0px 10px darkgray;
 }
 
 * {
