@@ -1,6 +1,6 @@
 root: {
     --box-color: solid yellow;
-    --box-shadow-color: darkgray;
+    --box-shadow: darkgray;
 }
 
 * {
@@ -29,7 +29,7 @@ img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px var(--box-shadow-color);
+    box-shadow: 0 0 30px var(--box-shadow);
 }
 
 p {
@@ -45,7 +45,7 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px var(--box-shadow-color);
+    box-shadow: 0 0 30px var(--box-shadow);
     float: right;
 }
 
