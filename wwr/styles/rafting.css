@@ -1,8 +1,12 @@
 :root {
-    --primary-color: #055a05; /*forest green*/
-    --secondary-color: #f4a261; /*warn sand*/
-    --accent1-color: #264653; /*deep slate blue*/
-    --accent2-color: #e9c46a; /*light golden yellow*/
+    --primary-color: #055a05;
+    /*forest green*/
+    --secondary-color: #f4a261;
+    /*warn sand*/
+    --accent1-color: #264653;
+    /*deep slate blue*/
+    --accent2-color: #e9c46a;
+    /*light golden yellow*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -18,17 +22,43 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto; 
+header,
+main,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
 }
 
-h1, h2 {
+header {
+    background-color: var(--primary-color);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img {
+    width: 7rem;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent2-color);
+    font: var(--body-font);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section {
+nav,
+p,
+section {
     margin: 16px;
     padding: 8px;
     font-family: var(--body-font);
@@ -58,7 +88,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; 
+    color: #fff;
 }
 
 .hero article {
@@ -80,6 +110,20 @@ article {
     width: 125px;
 }
 
+.history {
+    display: flex;
+    flex: wrap;
+}
+
+h2 {
+    flex-grow: 1;
+}
+
+.history img {
+    width: 200px;
+    margin: 20px;
+}
+
 h2 {
     background-color: var(--accent1-color);
     color: #fff;
@@ -87,11 +131,23 @@ h2 {
     text-align: center;
 }
 
+.adventure img {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-around;
+}
+
 .socialmedia {
     padding: 0;
     margin: 0;
     padding-left: 5px;
 }
+
 .socialmedia img {
     width: 60px;
     height: auto;
@@ -99,4 +155,8 @@ h2 {
 
 footer {
     border-top: 2px dotted;
+    background-color: var(--primary-color);
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
 }
