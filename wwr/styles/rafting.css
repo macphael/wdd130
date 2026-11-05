@@ -33,7 +33,7 @@ footer {
 header {
     background-color: var(--primary-color);
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
