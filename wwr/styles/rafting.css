@@ -5,7 +5,7 @@
     /*warn sand*/
     --accent1-color: #264653;
     /*deep slate blue*/
-    --accent2-color: #e9c46a;
+    --accent2-color: #D6E5E3;
     /*light golden yellow*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -31,7 +31,7 @@ footer {
 }
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,6 @@ nav a {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
 }
 
 nav,
@@ -62,7 +61,6 @@ section {
     margin: 16px;
     padding: 8px;
     font-family: var(--body-font);
-    color: var(--secondary-color)
 }
 
 .socialmedia a {
@@ -71,6 +69,7 @@ section {
 
 .hero {
     position: relative;
+    max-width: 100%;
 }
 
 .hero img {
@@ -88,7 +87,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent2-color);
 }
 
 .hero article {
@@ -115,6 +114,7 @@ article {
 }
 
 h2 {
+    width: 100%;
     flex-grow: 1;
 }
 
@@ -123,10 +123,10 @@ h2 {
     margin: 20px;
 }
 
-h2,
-h3 {
+h2 {
     background-color: var(--accent1-color);
-    color: #fff;
+    width: 100%;
+    color: var(--accent2-color);
     padding: 20px;
     text-align: center;
 }
@@ -138,6 +138,7 @@ h3 {
 }
 
 .adventure {
+    max-width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -155,8 +156,9 @@ h3 {
 
 footer {
     border-top: 2px dotted;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     flex-direction: row;
     justify-content: right;
     align-items: center;
+    color: var(--accent2-color)
 }
