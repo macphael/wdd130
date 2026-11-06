@@ -1,8 +1,4 @@
 :root {
-    --primary-color: #055a05;
-    /*forest green*/
-    --secondary-color: #f4a261;
-    /*warn sand*/
     --accent1-color: #264653;
     /*deep slate blue*/
     --accent2-color: #D6E5E3;
@@ -113,11 +109,6 @@ article {
     display: flex;
 }
 
-h2 {
-    width: 100%;
-    flex-grow: 1;
-}
-
 .history img {
     width: 200px;
     margin: 20px;
@@ -132,13 +123,11 @@ h2 {
 }
 
 .adventure img {
-    width: 200px;
-    height: 100px;
-    padding: 10px;
+    width: 180px;
+    padding: 5px;
 }
 
 .adventure {
-    max-width: 100%;
     display: flex;
     justify-content: space-around;
 }
