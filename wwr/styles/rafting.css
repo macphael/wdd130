@@ -23,13 +23,13 @@ main,
 footer {
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
 }
 
 header {
+    display: flex;
+    grid-template-columns: 200px 200px 200px 200px 200px;
     background-color: var(--accent1-color);
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 
@@ -44,6 +44,8 @@ nav a {
     font: var(--body-font);
     font-size: 1.7rem;
     padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
