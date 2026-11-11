@@ -1,0 +1,37 @@
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+caption {
+    font-weight: 700;
+}
+
+th {
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    font-weight: 700;
+    padding: 8px 12px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px 12px;
+}
+
+.bg {
+    background-color: lightgray;
+}
+
+tfoot {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+tfoot tr td {
+    border: 1px solid gray;
+}
