@@ -99,6 +99,7 @@ article {
 .history {
     display: flex;
     justify-content: flex-end;
+    margin-top: 10px;
 }
 
 .history img {
@@ -114,11 +115,16 @@ h2 {
 }
 
 .adventure {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
 }
 
 .adventure img {
+    width: 125px;
     padding: 5px;
 }
 
