@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 
 </head>
 
@@ -14,28 +15,37 @@
 
 <main>
     <form>
-        <fieldset>
-            <legend>Contact Information</legend>
+        <legend>Contact Information</legend>
+        <div class="form-item label-narrow">
             <label for="fullname">Fullname</label>
             <input type="text" id=fullname name="fullname" required>
+        </div>
+        <div class="form-item label-narrow">
             <label for="useremail">Email</label>
             <input type="email" id="useremail" name="useremail" required>
+        </div>
         </fieldset>
         <fieldset>
             <legend>Questions</legend>
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="1">Chrome</option>
-                <option value="2">Firefox</option>
-                <option value="3">Safari</option>
-                <option value="3">Edge</option>
-                <option value="3">Brave</option>
-                <option value="3">Other</option>
-            </select>
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" name="pet" id="pet">
-            <label for="places">List the places you have lived:</label>
-            <textarea id="places" name="places" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu, Mali"></textarea>
+            <div class="form-item label-wide">
+                <label for="browser">What is your favorite browser?</label>
+                <select name="browser" id="browser">
+                    <option value="1">Chrome</option>
+                    <option value="2">Firefox</option>
+                    <option value="3">Safari</option>
+                    <option value="3">Edge</option>
+                    <option value="3">Brave</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+            <div class="form-item label-wide">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" name="pet" id="pet">
+            </div>
+            <div class="form-item">
+                <label for="places">List the places you have lived:</label>
+                <textarea id="places" name="places" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu, Mali"></textarea>
+            </div>
         </fieldset>
         <button type="submit">Submit Poll</button>
     </form>
