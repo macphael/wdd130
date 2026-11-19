@@ -1,13 +1,14 @@
 :root {
     --accent1-color: #264653;
     /*deep slate blue*/
-    --accent2-color: #D6E5E3;
+    --accent2-color: #fff;
     /*light golden yellow*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +22,6 @@ body {
 header,
 main,
 footer {
-    width: 100%;
     margin: 0 auto;
     display: grid;
 }
@@ -41,7 +41,6 @@ header img {
 nav a {
     text-decoration: none;
     color: var(--accent2-color);
-    font: var(--body-font);
     font-size: 1.7rem;
     padding: 0.5rem;
     justify-content: center;
@@ -51,6 +50,7 @@ nav a {
 h1,
 h2 {
     font-family: var(--heading-font);
+    color: var(--accent2-color)
 }
 
 nav,
@@ -67,35 +67,22 @@ section {
 
 .hero {
     position: relative;
-    max-width: 100%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+    display: grid;
 }
 
 h1 {
     position: absolute;
     top: 20px;
-    width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: var(--accent2-color);
-}
-
-.hero article {
-    position: absolute;
+    color: var(--accent2-color)
 }
 
 article {
-    position: absolute;
-    top: 430px;
-    width: 100%;
+    position: relative;
     text-align: left;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
@@ -104,28 +91,33 @@ article {
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 152px;
+    height: auto;
 }
 
 .history {
     display: flex;
+    justify-content: flex-end;
 }
 
 .history img {
-    width: 200px;
-    margin: 20px;
+    width: 50%;
+    height: auto;
 }
 
 h2 {
     background-color: var(--accent1-color);
-    width: 100%;
     color: var(--accent2-color);
     padding: 20px;
     text-align: center;
 }
 
+.adventure {
+    display: flex;
+    justify-content: space-around;
+}
+
 .adventure img {
-    width: 180px;
     padding: 5px;
 }
 
@@ -145,6 +137,6 @@ footer {
     background-color: var(--accent1-color);
     flex-direction: row;
     justify-content: right;
-    align-items: center;
+    padding-right: 10px;
     color: var(--accent2-color)
 }
