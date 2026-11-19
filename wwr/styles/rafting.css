@@ -82,7 +82,7 @@ h1 {
     color: var(--accent2-color)
 }
 
-article {
+.hero article {
     position: absolute;
     text-align: left;
     background-color: var(--accent1-color);
