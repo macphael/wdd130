@@ -138,6 +138,10 @@ h2 {
 .company {
     font-size: 2rem;
     font-weight: bolder;
+    color: #000;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 30px;
 }
 
 .forms {
