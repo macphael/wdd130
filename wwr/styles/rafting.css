@@ -28,7 +28,7 @@ footer {
 
 header {
     display: flex;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: var(--accent1-color);
     align-items: center;
 }
@@ -214,7 +214,7 @@ label {
 
 button {
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent2-color);
     border: none;
     border-radius: .5rem;
     padding: .75rem;
@@ -225,7 +225,7 @@ button {
 
 button:hover,
 button:focus-visible {
-    background-color: red;
+    background-color: #ff0000;
 }
 
 .employees {
